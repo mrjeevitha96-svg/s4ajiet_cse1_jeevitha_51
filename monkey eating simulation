@@ -1,0 +1,31 @@
+mport java.util.Scanner;
+public class MonkeyProblem {
+    public static int calculateMonkeysLeft(int n, int m, int p, int k, int j) {
+        int bm= m /k;
+        int pm = p / j;
+        int totalMonkeysDown = bm + pm;
+        int remainingB = m % k;
+        int remainingP = p % j;
+        if (remainingB > 0 || remainingP > 0) {
+            totalMonkeysDown++;
+        }
+        int monkeysLeft = n - totalMonkeysDown;
+        return Math.max(monkeysLeft, 0);
+    }
+        public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("total monkeys (n):");
+        int n = sc.nextInt();
+        System.out.println("bananas per monkey (k):");
+        int k = sc.nextInt();
+        System.out.println("peanuts per monkey (j):");
+        int j = sc.nextInt();
+        System.out.println("total bananas (m):");
+        int m = sc.nextInt();
+        System.out.println("total peanuts (p):");
+        int p = sc.nextInt();
+        int result = calculateMonkeysLeft(n, m, p, k, j);
+        System.out.println("Monkeys left: " + result);
+        sc.close();
+    }
+}

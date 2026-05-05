@@ -16,10 +16,10 @@ public class Main {
             x=x/10;
         } 
         if(original==reverse){
-            System.out.println("it is a palindrome");
+            System.out.println(true);
         }else
             {
-                System.out.println("It is not a palindrome");
+                System.out.println(false);
 
             }
         }

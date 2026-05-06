@@ -1,0 +1,16 @@
+import java.util.TreeSet;
+public class main{
+    public static void main(String args[]){
+        TreeSet<Integer>ic=new TreeSet<>();
+        ic.add(2);
+        ic.add(20);
+        ic.add(2);
+        ic.add(23);
+        ic.add(67);
+        ic.remove(20);
+        System.out.print("treeSet:"+ic);
+        System.out.print("\nIs the set contains jeevi in it? : \n "+ic.contains(20));
+         System.out.print("\nwhen 20 is removed:\n"+ic);
+         System.out.print("\nAfter removing\n"+ic);
+    }
+}

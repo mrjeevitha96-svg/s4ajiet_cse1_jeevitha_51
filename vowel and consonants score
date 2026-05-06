@@ -1,0 +1,30 @@
+You are given a string s consisting of lowercase English letters, spaces, and digits.
+
+Let v be the number of vowels in s and c be the number of consonants in s.
+
+A vowel is one of the letters 'a', 'e', 'i', 'o', or 'u', while any other letter in the English alphabet is considered a consonant.
+
+The score of the string s is defined as follows:
+
+If c > 0, the score = floor(v / c) where floor denotes rounding down to the nearest integer.
+Otherwise, the score = 0.
+Return an integer denoting the score of the string.
+
+CODE:
+class Solution {
+    public int vowelConsonantScore(String s) {
+        int v=0;
+        int c=0;
+
+        for(int i=0;i<s.length();i++){
+            char ch = s.charAt(i);
+            if(ch==
+            'a'|| ch=='e'||ch=='i'||ch=='o'||ch=='u'){
+                v++;
+            }else{
+                c++;
+            }
+        }
+    return (c>0) ? (v/c):0;    
+    }
+}

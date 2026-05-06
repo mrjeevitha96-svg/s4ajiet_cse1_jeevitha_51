@@ -1,0 +1,16 @@
+import java.util.HashSet;
+public class main{
+    public static void main(String args[]){
+        HashSet<Integer>ai=new HashSet<>();
+        ai.add(2);
+        ai.add(20);
+        ai.add(2);
+        ai.add(23);
+        ai.add(67);
+        ai.remove(20);
+        System.out.print("Set:"+ai);
+        System.out.print("\nIs the set contains jeevi in it? : \n "+ai.contains(20));
+         System.out.print("\nwhen 20 is removed:\n"+ai);
+         System.out.print("\nAfter removing\n"+ai);
+    }
+}

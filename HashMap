@@ -1,0 +1,19 @@
+import java.util.HashMap;
+public class main{
+    public static void main(String args[]){
+        HashMap<Integer,String> m=new HashMap<>();
+        m.put(201,"alice");
+        m.put(202,"bob");
+        m.put(203,"july");
+        m.size();
+        System.out.print("HashMap:"+m);
+        System.out.print("\nremoving 201:\n"+m.remove(201));
+        System.out.print("\nafter removing 201:\n"+m);
+    }   
+}
+output:
+HashMap:{201=alice, 202=bob, 203=july}
+removing 201:
+alice
+after removing 201:
+{202=bob, 203=july}

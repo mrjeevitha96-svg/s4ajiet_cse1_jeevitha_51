@@ -1,0 +1,26 @@
+import java.util.TreeMap;
+public class main{
+    public static void main(String args[]){
+        TreeMap<Integer,String> x=new TreeMap<>();
+        x.put(201,"alice");
+        x.put(202,"bob");
+        x.put(203,"july");
+        x.size();
+        System.out.print("HashMap :"+x);
+        System.out.print("\nname of 201:\n"+x.get(201));
+        x.remove(201);
+        System.out.print("\nafter removing 201:\n"+x);
+        x.clear();
+        System.out.print("\nafter clear : "+x);
+        System.out.print("\ncontain 201?: "+x.containsKey(201));
+    }   
+}
+output:
+
+HashMap :{201=alice, 202=bob, 203=july}
+name of 201:
+alice
+after removing 201:
+{202=bob, 203=july}
+after clear : {}
+contain 201?: false

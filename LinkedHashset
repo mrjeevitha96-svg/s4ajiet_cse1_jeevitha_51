@@ -1,0 +1,16 @@
+import java.util.LinkedHashSet;
+public class main{
+    public static void main(String args[]){
+        LinkedHashSet<Integer>c=new LinkedHashSet<>();
+        c.add(2);
+        c.add(20);
+        c.add(2);
+        c.add(23);
+        c.add(67);
+        c.remove(2);
+        System.out.print("LinkedHashSet:"+c);
+        System.out.print("\nIs the set contains jeevi in it? : \n "+c.contains(2));
+         System.out.print("\nwhen 20 is removed:\n"+c);
+         System.out.print("\nAfter removing\n"+c);
+    }
+}

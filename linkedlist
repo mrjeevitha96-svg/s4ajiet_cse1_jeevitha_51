@@ -1,0 +1,12 @@
+import java.util.LinkedList;
+public class main{
+    public static void main(String args[]){
+        LinkedList<Integer>cse=new LinkedList<>();
+        cse.add(10);
+        cse.add(20);
+        cse.addFirst(6);
+        cse.addLast(50);
+        cse.removeFirst();
+        System.out.print(cse);
+    }
+}

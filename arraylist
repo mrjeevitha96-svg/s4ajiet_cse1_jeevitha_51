@@ -1,0 +1,12 @@
+import java.util.ArrayList;
+public class main{
+    public static void main(String args[]){
+        ArrayList<String>list=new ArrayList<String>();
+        list.add("Java");
+        list.add("Pyhton");
+        list.add("Java");
+        list.remove(0);
+        System.out.print(list);
+        System.out.print("\nthe list size is::"+list.size());
+    }
+}
